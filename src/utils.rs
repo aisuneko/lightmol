@@ -62,7 +62,7 @@ pub fn parse_num(s: &str, i: usize) -> u32 {
 //     println!();
 // }
 
-pub static ABOUT_MSG: &str = "Lightmol v0.1 by aisuneko\npowered by Rust and fltk-rs";
+pub static ABOUT_MSG: &str = "Lightmol v0.1.1 by aisuneko\npowered by Rust and fltk-rs";
 pub fn init_schooldata() -> HashMap<Element, f32> {
     HashMap::from([
         (Element::Carbon, 12.0),

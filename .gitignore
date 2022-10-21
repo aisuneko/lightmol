@@ -1,1 +1,3 @@
 /target
+*.AppImage
+build_commands.txt

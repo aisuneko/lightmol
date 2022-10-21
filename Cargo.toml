@@ -1,9 +1,12 @@
 [package]
 name = "lightmol"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
-
+include = ["icon.svg", "icon.png"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[[bin]]
+name = "lightmol"
+path = "src/main.rs"
 
 [dependencies]
 periodic-table-on-an-enum = "0.3.2"
@@ -13,3 +16,9 @@ fltk-theme = "0.4.2"
 [profile.release]
 strip = true
 lto = true  
+
+# [target.'cfg(target_family = "windows")']
+# rustflags = ["-C","-Wl,--subsystem,windows"]
+
+# [package.metadata.appimage]
+# auto_link = true

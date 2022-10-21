@@ -17,12 +17,15 @@ The app supports two calculation modes: Normal Mode and school Mode. In Normal M
 Examples: `Ca(OH)2` `Cu2(OH)2CO3` `NH4OH` `CCl4` `AgCl` `CuSO4-5H2O` `KAl(SO4)2-12H2O` `[C(NH2)3]Al(SO4)2`
 
 ## TODO
-- [ ] Publish prebuilt binaries
+- [X] Publish prebuilt binaries
 - [ ] ~~Make UI prettier (is that even possible under FLTK?)~~
 - [ ] Tidy up UI-side code
 - [ ] Add support for custom rounding precision
 
 ## Changelog
+- v0.1.1 (2022/10/21)
+  - Published prebuilt binaries for Linux (Appimage) and Windows
+  - Fixed a bug related to icon loading
 - v0.1 (2022/10/18)
   - Initial release
 
