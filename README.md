@@ -5,6 +5,8 @@ A lightweight, minimal molecular mass calculator with no hassle, powered by Rust
 (sorry for the ugly UI though)
 ![](screenshot.png)
 
+## Download
+Head to [Releases](https://github.com/aisuneko/lightmol/releases/tag/v0.1.1).
 ## Usage
 Simply type in chemical formulas in their natural form, with subscripts represented by normal numbers, then press Enter or click "Calculate". **All elements are case sensitive.**
 
