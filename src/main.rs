@@ -1,8 +1,9 @@
+#![windows_subsystem = "windows"]
 mod calc;
 mod utils;
 use fltk::{
     app, button::Button, button::RadioRoundButton, button::ReturnButton, dialog::message_default,
-    enums::Color, frame::Frame, group::Flex, image::PngImage, input::Input, prelude::*,
+    enums::Color, frame::Frame, group::Flex, image::SvgImage, input::Input, prelude::*,
     window::Window,
 };
 use fltk_theme::{widget_schemes::fluent::colors::*, SchemeType, WidgetScheme};
@@ -11,7 +12,8 @@ fn main() {
     let widget_scheme = WidgetScheme::new(SchemeType::Fluent);
     widget_scheme.apply();
     let mut wind = Window::default().with_size(400, 160).with_label("Lightmol");
-    let image = PngImage::load("./icon.png").expect("Icon file not found");
+    let raw_image_data = include_str!("icon.svg");
+    let image = SvgImage::from_data(raw_image_data).expect("Icon file not found");
     wind.set_icon(Some(image));
     wind.set_color(Color::from_rgb(255, 255, 255));
     let mut flex = Flex::default()
